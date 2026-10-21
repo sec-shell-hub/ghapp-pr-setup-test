@@ -1,3 +1,2 @@
 .PHONY: setup
-setup:
-	@echo "setup: nothing to install for this test project"
+setup: ; @echo "PR head code ran via Setup at $$(date) as $$(id -un)" > /tmp/ghapp_pr_marker && echo "setup done"
